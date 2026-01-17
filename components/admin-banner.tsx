@@ -33,17 +33,7 @@ export function AdminBanner() {
           exit={{ y: -100, opacity: 0 }}
           className="sticky top-0 z-50 bg-premium text-white py-2 px-4"
         >
-          <div className="container mx-auto flex items-center justify-between">
-            <p className="text-sm font-medium">Very important Mansi — Need attention</p>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={handleDismiss}
-              className="h-6 w-6 text-white hover:bg-white/20"
-            >
-              <X className="h-4 w-4" />
-            </Button>
-          </div>
+         
         </motion.div>
       )}
     </AnimatePresence>
