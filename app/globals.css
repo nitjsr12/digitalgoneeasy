@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --surface: #f2fbf7;
+  --highlight: #ecffd5;
+
+  --primary: #267558;
+  --primary-hover: #1f624a;
+
+  --secondary: #8ed4b8;
+  --secondary-hover: #79c7a9;
+
+  --premium: #443325;
+
+  --text-heading: #1b2b24;
+  --text-body: #2e3e37;
+  --text-muted: #6b7c74;
+
+  --border: #aabbb3;
+
+  --dark-bg: #0e1d17;
+
+  --gradient-brand: linear-gradient(90deg, #267558 0%, #8ed4b8 100%);
+  --gradient-soft: linear-gradient(180deg, #ecffd5 0%, #ffffff 100%);
+
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  color: var(--text-body);
+  background: var(--bg);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-heading);
+  }
+}
+
+@layer utilities {
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Better focus styles for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  
+  /* Improved text rendering */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Line clamp utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
