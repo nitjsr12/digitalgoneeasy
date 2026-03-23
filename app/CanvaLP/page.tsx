@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useMemo, useState } from "react"
 import { Poppins } from "next/font/google"
 import { cn } from "@/lib/utils"
 
@@ -14,7 +14,6 @@ const CTA_LINK = "https://tagmango.com/web/checkout/69c0f7b1f23bf41609d94447"
 type FaqItem = { q: string; a: string }
 
 export default function CanvaLPPage() {
-  const [scrolled, setScrolled] = useState(false)
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null)
 
   const faqItems: FaqItem[] = useMemo(
@@ -47,13 +46,6 @@ export default function CanvaLPPage() {
     [],
   )
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
   const primaryBtn =
     "inline-flex items-center justify-center gap-1 font-semibold border-none cursor-pointer rounded-full transition-all duration-300 ease-[cubic-bezier(.4,0,.2,1)] whitespace-nowrap letter-[0.3px]"
   const primaryBtnLg = "px-[40px] py-[18px] text-[1.05rem] shadow-[0_4px_18px_rgba(168,85,247,.35)]"
@@ -69,33 +61,8 @@ export default function CanvaLPPage() {
   const courseEmbedSrc =
     "https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&showinfo=0"
 
-  const headerClasses = cn(
-    "sticky top-0 z-50 bg-[rgba(255,255,255,.88)] backdrop-blur-[16px] border-b border-[rgba(200,180,255,.2)] transition-shadow duration-300",
-    scrolled ? "shadow-[0_4px_20px_rgba(100,50,200,.10)]" : "shadow-none",
-  )
-
   return (
     <div className={poppins.className}>
-      {/* HEADER (from your original landing page) */}
-      <header className={headerClasses}>
-        <div className="mx-auto max-w-[1200px] px-[24px] flex items-center justify-between pt-[14px] pb-[14px]">
-          <div className="flex items-center gap-[8px] font-bold text-[1.15rem] text-[#1a0933]">
-            <span className="text-[1.4rem] bg-[linear-gradient(135deg,#c084fc_0%,#e879b0_100%)] bg-clip-text text-transparent">
-              ✦
-            </span>
-            <span>CanvaMasterclass</span>
-          </div>
-          <a
-            href={CTA_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(primaryBtn, primaryBtnSm, primaryBtnPrimary)}
-          >
-            Register Now →
-          </a>
-        </div>
-      </header>
-
       {/* HERO */}
       <section
         className="bg-[linear-gradient(160deg,#faf5ff_0%,#fef3fb_60%,#fff_100%)] overflow-hidden pt-[100px] pb-0"
@@ -757,47 +724,6 @@ export default function CanvaLPPage() {
         </div>
       </section>
 
-      {/* FOOTER (from your original landing page) */}
-      <footer className="bg-[#1a0933] py-[48px]">
-        <div className="mx-auto max-w-[1200px] px-[24px] text-center flex flex-col items-center gap-[16px]">
-          <div className="text-[#fff] flex items-center gap-[8px] font-bold">
-            <span className="text-[1.4rem] bg-[linear-gradient(135deg,#c084fc_0%,#e879b0_100%)] bg-clip-text text-transparent">
-              ✦
-            </span>
-            <span>CanvaMasterclass</span>
-          </div>
-          <p className="text-[.9rem] text-[rgba(255,255,255,.55)] italic max-w-[400px]">
-            &quot;Built for people serious about learning real skills.&quot;
-          </p>
-          <div className="flex gap-[24px] flex-wrap justify-center">
-            <a href="#learn" className="text-[.85rem] text-[rgba(255,255,255,.5)] font-medium hover:text-[rgba(255,255,255,.9)] transition-colors">
-              Curriculum
-            </a>
-            <a href="#bonus" className="text-[.85rem] text-[rgba(255,255,255,.5)] font-medium hover:text-[rgba(255,255,255,.9)] transition-colors">
-              Bonuses
-            </a>
-            <a href="#testimonials" className="text-[.85rem] text-[rgba(255,255,255,.5)] font-medium hover:text-[rgba(255,255,255,.9)] transition-colors">
-              Reviews
-            </a>
-            <a href="#faq" className="text-[.85rem] text-[rgba(255,255,255,.5)] font-medium hover:text-[rgba(255,255,255,.9)] transition-colors">
-              FAQ
-            </a>
-            <a
-              href={CTA_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[.85rem] text-[rgba(255,255,255,.5)] font-medium hover:text-[rgba(255,255,255,.9)] transition-colors"
-            >
-              Register
-            </a>
-          </div>
-          <div className="w-full border-t border-[rgba(255,255,255,.08)] pt-[20px]">
-            <p className="text-[.78rem] text-[rgba(255,255,255,.35)]">
-              © 2025 CanvaMasterclass. All rights reserved. Starts 1st April · 6 PM – 7 PM · ₹899
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
