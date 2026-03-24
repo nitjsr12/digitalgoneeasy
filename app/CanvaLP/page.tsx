@@ -33,7 +33,7 @@ export default function CanvaLPPage() {
       },
       {
         q: "Is Canva Pro access really included?",
-        a: "Yes, every enrolled student gets access to Canva Pro tools during the course duration — part of our bonus value stack included in the ₹899 price.",
+        a: "Yes, every enrolled student gets access to Canva Pro tools during the course duration — part of our bonus value stack included in the ₹999 price.",
       },
       {
         q: "What device do I need for this course?",
@@ -67,7 +67,7 @@ export default function CanvaLPPage() {
   const whiteBtnMd = "px-[28px] py-[12px] text-[.9rem] text-[#8b5cf6] bg-white"
 
   const courseEmbedSrc =
-    "https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&showinfo=0"
+    "https://www.youtube.com/embed/FyapP-85Qcs?rel=0&modestbranding=1&showinfo=0"
 
   const headerClasses = cn(
     "sticky top-0 z-50 bg-[rgba(255,255,255,.88)] backdrop-blur-[16px] border-b border-[rgba(200,180,255,.2)] transition-shadow duration-300",
@@ -145,7 +145,7 @@ export default function CanvaLPPage() {
                 Register Now →
               </a>
               <p className="text-[.88rem] text-[#6b7280] font-medium">
-                Only ₹899 · Limited Seats
+                Only ₹999 · Limited Seats
               </p>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function CanvaLPPage() {
                 Join Now for Just
               </div>
               <div className="text-[1.8rem] font-extrabold text-white my-[8px] mb-[16px]">
-                ₹899
+                ₹999
               </div>
               <a
                 href={CTA_LINK}
@@ -427,7 +427,7 @@ export default function CanvaLPPage() {
             <div className="w-[48px] h-[2px] bg-[linear-gradient(135deg,#c084fc_0%,#e879b0_100%)] mx-auto mb-[16px] rounded-[4px]" />
             <div className="text-[.85rem] font-semibold text-[rgba(255,255,255,.7)] mb-[6px]">Today&apos;s Price</div>
             <div className="text-[3rem] font-extrabold bg-[linear-gradient(135deg,#c084fc_0%,#e879b0_100%)] bg-clip-text text-transparent mb-[24px]">
-              ₹899
+              ₹999
             </div>
             <a
               href={CTA_LINK}
@@ -435,7 +435,7 @@ export default function CanvaLPPage() {
               rel="noopener noreferrer"
               className={cn(primaryBtn, primaryBtnLg, primaryBtnPrimary)}
             >
-              Register Now at ₹899 →
+              Register Now at ₹999 →
             </a>
           </div>
         </div>
@@ -628,7 +628,7 @@ export default function CanvaLPPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
             {[
-              ["Priya Sharma", "Content Creator, Delhi", "P", "★★★★★", "I had zero design experience before this course. By Day 5 I was already making posts for my Instagram page that people loved. Best ₹899 I've ever spent!"],
+              ["Priya Sharma", "Content Creator, Delhi", "P", "★★★★★", "I had zero design experience before this course. By Day 5 I was already making posts for my Instagram page that people loved. Best ₹999 I've ever spent!"],
               ["Rahul Verma", "Freelance Designer, Mumbai", "R", "★★★★★", "Started freelancing on Fiverr after completing Day 9. Got my first client within a week. The instructor genuinely cares and the live sessions are so interactive."],
               ["Ankita Joshi", "Boutique Owner, Pune", "A", "★★★★★", "As a business owner, I was spending ₹5,000/month on a designer. Now I create all my own marketing material. This course paid for itself on Day 1!"],
               ["Karan Mehta", "YouTuber, Bangalore", "K", "★★★★★", "The Canva AI tools session blew my mind. I'm now 10x faster at creating content and my YouTube channel growth has been amazing since applying what I learned."],
@@ -681,7 +681,7 @@ export default function CanvaLPPage() {
               Total Value ₹5,000+
             </div>
             <div className="text-[3.2rem] font-extrabold bg-[linear-gradient(135deg,#c084fc_0%,#e879b0_100%)] bg-clip-text text-transparent">
-              ₹899
+              ₹999
             </div>
             <div className="text-[.82rem] text-[rgba(255,255,255,.6)]">
               ⚡ Only a few seats left — Starts 1st April
@@ -692,7 +692,7 @@ export default function CanvaLPPage() {
               rel="noopener noreferrer"
               className={cn(primaryBtn, "px-[48px] py-[18px] text-[1.05rem]", primaryBtnPrimary)}
             >
-              Register Now at ₹899 →
+              Register Now at ₹999 →
             </a>
             <p className="mt-[20px] text-[.82rem] text-[rgba(255,255,255,.5)]">
               🔒 Secure Payment · Certificate Included · Canva Pro Bonus
@@ -793,7 +793,7 @@ export default function CanvaLPPage() {
           </div>
           <div className="w-full border-t border-[rgba(255,255,255,.08)] pt-[20px]">
             <p className="text-[.78rem] text-[rgba(255,255,255,.35)]">
-              © 2025 CanvaMasterclass. All rights reserved. Starts 1st April · 6 PM – 7 PM · ₹899
+              © 2025 CanvaMasterclass. All rights reserved. Starts 1st April · 6 PM – 7 PM · ₹999
             </p>
           </div>
         </div>
